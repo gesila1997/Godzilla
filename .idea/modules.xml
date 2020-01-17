@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/indusfo.iml" filepath="$PROJECT_DIR$/.idea/indusfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/indusfoserver/indusfoserver.iml" filepath="$PROJECT_DIR$/indusfoserver/indusfoserver.iml" />
+    </modules>
+  </component>
+</project>
