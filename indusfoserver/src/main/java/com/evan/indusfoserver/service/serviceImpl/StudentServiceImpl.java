@@ -3,7 +3,6 @@ package com.evan.indusfoserver.service.serviceImpl;
 import com.evan.indusfoserver.mapper.StudentMapper;
 import com.evan.indusfoserver.pojo.Student;
 import com.evan.indusfoserver.service.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
