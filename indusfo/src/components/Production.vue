@@ -39,43 +39,16 @@ get() {
    this.$axios.get("/Proselect").then(res => {
       let Proselect = res.data;
       let resuelt=[];
-      let resurltpuls=[];
+      // let resurltpuls=[];
       for (let i = 0; i < Proselect.length; i++) {
         resuelt.push(Object.values(Proselect[i]))
-        if(resuelt.length>0){
-        resurltpuls.push([resuelt[i][3],resuelt[i][6],resuelt[i][0],resuelt[i][2],resuelt[i][4],resuelt[i][1],resuelt[i][8],resuelt[i][7],resuelt[i][5]]
-        )}
+        // if(resuelt.length>0){
+        // resurltpuls.push([resuelt[i][7],resuelt[i][6],resuelt[i][4],resuelt[i][0],resuelt[i][1],resuelt[i][5],resuelt[i][3],resuelt[i][8],resuelt[i][2]]
+        // )}
         }
         this.loading=false
-        // console.log(resurltpuls)
-        //  console.log(Proselect)
-        // let resurltpuls=[resuelt[i][3],resuelt[i][6],resuelt[i][0],resuelt[i][2],resuelt[i][4],resuelt[i][1],resuelt[i][8],resuelt[i][7],resuelt[i][5]]  
-        // console.log(resurltpuls)
-        // var test= {prdtName: "K7015A-7", mcount: 6100, cdate: "2019-12-04", po: "PO20191204151644", jdate: "2019-12-06"}
-        // var objs = [
-        //   "a","b","c","d","e"
-        // ];
-
-        //   var arr = [];
-        //   for(var i =0;i<objs.length;i++){
-        //       var obj =[
-        //              objs[0],
-        //              objs[2],
-        //              objs[3],
-        //              objs[1]
-        //       ]
-        //       arr.push(obj);
-        //         }
-        // console.log(arr)
-        // objs.sort(function(a,b){
-        //     // order是规则  objs是需要排序的数组
-        //     var order = ["po", "prdtName", "mcount", "cdate","jdate"];
-        //     return order.indexOf(Object.values(test[a])) - order.indexOf(Object.values(test[b]));
-        // });
-        // console.log(objs[0])
-        // console.log(Object.values(Proselect[0]))
         this.config = { 
-        data: resurltpuls,
+        data: resuelt,
         index: true,
         columnWidth: [45,182,135,180,115,135,100,120,150],
         rowNum:15,

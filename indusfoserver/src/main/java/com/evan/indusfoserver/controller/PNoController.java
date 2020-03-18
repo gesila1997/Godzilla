@@ -20,8 +20,6 @@ public class PNoController {
 
     @GetMapping(value = "/api/Pnoselect")
     public List<PNo> Pnoselect() throws Exception {
-
         return pNoService.Pnoselect();
-
     }
 }

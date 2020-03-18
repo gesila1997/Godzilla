@@ -1,14 +1,13 @@
 <template>
 <div>
-    <div class="menu">
-        
+    <div class="menu">     
      <el-menu
         :default-active="this.$route.path"
         class="el-menu-vertical-demo"
         text-color='#FFF'
         router
       >
-        <p class="indextext">industrial four</p>
+        <p class="indextext">可视化工程</p>
         <el-menu-item @click='indexclick'>
           <i class="el-icon-s-home"></i>
           <span slot="title">首页看板</span>

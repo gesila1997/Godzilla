@@ -3,7 +3,7 @@
     <groupId>com.evan</groupId>
     <artifactId>indusfo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>wj</name>
+    <name>sb</name>
     <description>White Jotter - Your Mind Palace</description>
     <packaging>war</packaging>
     <parent>

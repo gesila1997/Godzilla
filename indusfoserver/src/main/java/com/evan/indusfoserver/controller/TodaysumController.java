@@ -1,6 +1,5 @@
 package com.evan.indusfoserver.controller;
 
-import com.evan.indusfoserver.pojo.Ptype;
 import com.evan.indusfoserver.pojo.Todaysum;
 import com.evan.indusfoserver.service.TodaysumService;
 import org.springframework.beans.factory.annotation.Autowired;

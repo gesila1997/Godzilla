@@ -45,7 +45,7 @@ export default {
     methods: {
     closeMain(val){
         this.index =val
-        console.log(val)
+        //console.log(val)
     },
   canplay() {
         this.vedioCanPlay = true

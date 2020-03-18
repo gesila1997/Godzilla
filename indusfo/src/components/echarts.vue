@@ -42,9 +42,9 @@
             </div>
             <div class="Text_2"> 
               <dv-loading v-if="!loading">Loading...</dv-loading>  
-              <dv-border-box-8>
+              <!-- <dv-border-box-8> -->
               <div class="map" id="mapcharts" v-if="loading"></div>
-              </dv-border-box-8>
+              <!-- </dv-border-box-8> -->
             </div>
             <div class="Text_3">
               <dv-loading v-if="!loading">Loading...</dv-loading>
@@ -329,28 +329,28 @@ export default {
     };
     },
     methods: {
-    closeMain(val){
-        let result = val;
-        console.log(result+'我是爸爸组件')
-        if(result=='production'){
-          console.log(result+'我是生产页面,请让我显示')
-          this.index=false
-          this.proction=true
-          this.submitted=false
-        }
-        if(result=='index'){
-          console.log(result+'我是首页页面,请让我显示')
-          this.index    =true
-          this.proction =false
-          this.submitted=false
-        }
-        if(result=='submitted'){
-          console.log(result+'我是报工页面,请让我显示')
-          this.index    =false
-          this.proction =false
-          this.submitted=true
-        }
-    },
+    // closeMain(val){
+    //     let result = val;
+    //     console.log(result+'我是爸爸组件')
+    //     if(result=='production'){
+    //       console.log(result+'我是生产页面,请让我显示')
+    //       this.index=false
+    //       this.proction=true
+    //       this.submitted=false
+    //     }
+    //     if(result=='index'){
+    //       console.log(result+'我是首页页面,请让我显示')
+    //       this.index    =true
+    //       this.proction =false
+    //       this.submitted=false
+    //     }
+    //     if(result=='submitted'){
+    //       console.log(result+'我是报工页面,请让我显示')
+    //       this.index    =false
+    //       this.proction =false
+    //       this.submitted=true
+    //     }
+    // },
     drawChart() {
       // 基于准备好的dom，初始化echarts实例
       let myChart = this.$echarts.init(document.getElementById("main"));
@@ -767,7 +767,7 @@ export default {
            let Todayselect = res.data
            this.todaysum =Todayselect[0]})
          },
-  async demoTest() {
+  async  demoTest() {
       this.fuck     = await this.demo();
       this.fuckyou  = await this.demo3();
       this.ringdata = await this.demo4();
@@ -824,7 +824,6 @@ export default {
               arr2.push(o);
           }
           resolve(arr2)
-          console.log(arr2) 
         });
       });
     },

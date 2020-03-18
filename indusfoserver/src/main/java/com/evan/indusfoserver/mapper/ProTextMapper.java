@@ -9,6 +9,6 @@ import java.util.List;
 @Mapper
 @Repository
 public interface ProTextMapper {
-    @Select("SELECT PO,Cname,PrdtName,Cdate,Jdate,Mcount,FQTY,PoStatus,Permark FROM c03_text")
+    @Select("SELECT po,cname,prdtname,cdate,jdate,mcount,fqty,postatus,permark FROM c03_text")
     List<ProText> Proselect();
 }

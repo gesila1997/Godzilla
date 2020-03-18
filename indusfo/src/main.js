@@ -9,6 +9,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store/index'
 import dataV from '@jiaminghi/data-view'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'   // 使用 CSS
 // 设置反向代理，前端请求默认发送到 http://localhost:8443/api
 var axios = require('axios')
 axios.defaults.baseURL = 'http://localhost:8443/api'
@@ -19,6 +21,7 @@ Vue.use(ElementUI)
 Vue.use(VCharts)
 Vue.use(global)
 Vue.use(dataV)
+Vue.use(iView)
 
 
 router.beforeEach((to, from, next) => {
